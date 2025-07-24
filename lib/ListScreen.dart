@@ -22,9 +22,14 @@ class Listscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('List Screen'),
-      centerTitle: true,
-        backgroundColor: Colors.orangeAccent,
+      appBar: AppBar(
+        title: Text('List Page'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context); // এটা ব্যাক করে Home Page-এ ফিরিয়ে নিয়ে যাবে
+          },
+        ),
       ),
       body: ListView.builder(
 
@@ -41,7 +46,27 @@ class Listscreen extends StatelessWidget {
             );
           }
       ),
-      backgroundColor: Colors.orangeAccent,
+     // backgroundColor: Colors.orangeAccent,
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+                child:
+                UserAccountsDrawerHeader(
+                  currentAccountPicture:Image.asset('asset/Tes. Card.jpg') ,
+                accountName: Text('MD Bijoy'),
+                accountEmail: Text('bijoy@gmail.com')
+                
+            )
+            ),
+            
+            ListTile(title: Text('Home'), leading: Icon(Icons.home)),
+            ListTile(title: Text('Mobile'),leading: Icon(Icons.phone)),
+            ListTile(title: Text('Email'),leading: Icon(Icons.mail)),
+            ListTile(title: Text('Setting'),leading: Icon(Icons.settings)),
+          ],
+        ),
+      ),
     );
   }
 }
