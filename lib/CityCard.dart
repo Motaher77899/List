@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-class CityCard extends StatelessWidget {
-  final String img,title,rating;
-  const CityCard({
-    super.key, required this.img, required this.title, required this.rating,
+class NewWidget extends StatelessWidget {
+  final String img, title, rating;
+  const NewWidget({
+    super.key, required this.img, required this.title, required this.rating
   });
 
   @override
@@ -11,7 +11,7 @@ class CityCard extends StatelessWidget {
       children: [
         Container(
           height: 200,
-          width: 300,
+
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             image: DecorationImage(

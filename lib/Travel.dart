@@ -58,43 +58,7 @@ class TravelHomeScreen extends StatelessWidget {
       ListView(
         children: [
           // === Stack Header ===
-          Stack(
-            children: [
-              Image.network(
-                'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1080',
-                height: 250,
-                width: double.infinity,
-                fit: BoxFit.cover,
-              ),
-              Container(height: 250, color: Colors.black.withOpacity(0.4)),
-              Positioned(
-                left: 20,
-                bottom: 30,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Explore the World',
-                      style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(height: 8),
-                    Container(
-                      width: 300,
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Search destination...',
-                          filled: true,
-                          fillColor: Colors.white,
-                          prefixIcon: Icon(Icons.search),
-                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
+
 
           SizedBox(height: 20),
 
@@ -278,3 +242,4 @@ class TravelHomeScreen extends StatelessWidget {
     );
   }
 }
+
