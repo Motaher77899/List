@@ -80,7 +80,7 @@ class _WaterTrackerState extends State<WaterTracker> {
                     WaterTankButon(amount: 100, onClick: ()=> waterAdd(100),),
                     WaterTankButon(amount: 200, onClick: ()=> waterAdd(200),),
                     WaterTankButon(amount: 500, onClick: ()=> waterAdd(500),),
-                    WaterTankButon(amount: 700, onClick: ()=> waterAdd(700),),
+                    WaterTankButon(amount: 100, onClick: ()=> waterAdd(-100),),
                   ],
                 ),
                 Padding(
