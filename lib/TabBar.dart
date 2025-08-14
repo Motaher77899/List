@@ -10,7 +10,7 @@ class Tabbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 2,
       child: Scaffold(
         appBar: AppBar(title: Text('Tab Bar'),
         centerTitle: true,
@@ -24,9 +24,7 @@ class Tabbar extends StatelessWidget {
                 Tab(
                   icon: Icon(Icons.star),text: 'Star',
                 ),
-                Tab(
-                  icon: Icon(Icons.settings),text: 'Setting',
-                )
+
               ]
           ),
         ),
@@ -36,7 +34,7 @@ class Tabbar extends StatelessWidget {
             children: [
           OwnWidget(),
           TravelHomeScreen(),
-          Listscreen()
+
 
         ]
         ),

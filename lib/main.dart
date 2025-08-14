@@ -8,6 +8,7 @@ import 'package:list/widget/Own_widget.dart';
 
 import 'Football/football_home.dart';
 import 'FullApp.dart';
+import 'MoneyManagment.dart';
 import 'StackFile/stackHeder.dart';
 import 'Travel.dart';
 import 'Water_Tank/WaterTank.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-       home:WaterTankScreen2(),
+       home:MoneyManagment(),
     );
   }
 }

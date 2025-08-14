@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'ListScreen.dart';
+import 'food_app.dart';
 
 class TravelHomeScreen extends StatelessWidget {
   final List<Map<String, String>> destinations = [
@@ -224,7 +225,7 @@ class TravelHomeScreen extends StatelessWidget {
             // List আইকনে ট্যাপ করলে নতুন পেজে যাও
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Listscreen()),
+              MaterialPageRoute(builder: (context) => FoodApp()),
             );
           } else{
             null;
